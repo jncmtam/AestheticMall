@@ -1,24 +1,110 @@
+# ─────────────────────────────────────────────────────────────
+# Node.js / React / Vite (Frontend)
+# ─────────────────────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Vite cache
+.vite/
+node_modules/.vite/
+
+# Build outputs
+/build
+/.svelte-kit
+/.vercel
+/.netlify
+
 # Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ─────────────────────────────────────────────────────────────
+# Python / FastAPI (Backend)
+# ─────────────────────────────────────────────────────────────
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/env/
+backend/venv/
+backend/.venv/
+backend/pip-log.txt
+backend/pip-delete-this-directory.txt
+backend/celerybeat-schedule
+backend/celeryd.pid
+
+# Backend build & cache
+backend/instance/
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/.tox/
+backend/.nox/
+backend/.mypy_cache/
+backend/.ruff_cache/
+
+# Backend logs & database
+backend/*.log
+backend/*.sqlite3
+backend/*.db
+
+# ─────────────────────────────────────────────────────────────
+# Docker / PostgreSQL (nếu bạn dùng sau này)
+# ─────────────────────────────────────────────────────────────
+docker-compose.override.yml
+.docker/
+*.docker
+
+# ─────────────────────────────────────────────────────────────
+# Misc
+# ─────────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.temp/
+.cache/
+coverage/
+.nyc_output/
+
+# Nếu bạn có thư mục upload ảnh
+backend/static/images/*.jpg
+backend/static/images/*.png
+!backend/static/images/placeholder.jpg
+
+# Chỉ bỏ qua file log debug npm
+2025-*-debug-*.log``
